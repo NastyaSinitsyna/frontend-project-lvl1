@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 
 const userName = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
-const userGreeting = () => {
+
+export const greeting = () => {
   console.log(`Hi, ${userName}!`);
 };
-export default userGreeting;
 
 const isEven = (num) => {
   if (num % 2 === 0) {

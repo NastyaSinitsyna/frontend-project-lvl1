@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import userGreeting, { game } from '../src/cli.js';
+import { greeting, game } from '../src/cli.js';
 
-userGreeting();
+greeting();
 game();

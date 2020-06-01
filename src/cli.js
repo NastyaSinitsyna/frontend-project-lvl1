@@ -13,13 +13,17 @@ const isEven = (num) => {
   return 'no';
 };
 
+const getRandomInt = () => {
+  const min = Math.ceil(1);
+  const max = Math.floor(100);
+  return Math.floor(Math.random() * (max - min)) + min;
+};
+
 export const game = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  const numbers = [15, 6, 7];
-
-  for (let i = 0; i < numbers.length; i += 1) {
-    const number = numbers[i];
+  for (let i = 0; i < 3; i += 1) {
+    const number = getRandomInt();
     const correctAnswer = isEven(number);
     const answer = readlineSync.question(`Question: ${number}\nYour answer: `);
     if (answer !== correctAnswer) {

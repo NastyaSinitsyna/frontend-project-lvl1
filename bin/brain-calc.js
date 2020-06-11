@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { greeting, calc } from '../src/cli.js';
+import greeting from '../src/greeting.js';
+import calc from '../src/games/calc.js';
 
-greeting();
-calc();
+
+calc(greeting());

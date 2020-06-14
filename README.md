@@ -3,3 +3,5 @@
 <a href="https://codeclimate.com/github/NastyaSinitsyna/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9f08646be084243f4688/maintainability" /></a>
 
 [![asciicast](https://asciinema.org/a/zkh3AysBBauY1n9HuWABKQHwH.png)](https://asciinema.org/a/zkh3AysBBauY1n9HuWABKQHwH)
+
+[![asciicast](https://asciinema.org/a/NukEolnJ2aaImucI8vbvkUL8j.png)](https://asciinema.org/a/NukEolnJ2aaImucI8vbvkUL8j)

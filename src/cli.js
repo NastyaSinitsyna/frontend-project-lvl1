@@ -22,7 +22,7 @@ const getRandomInt = () => {
 };
 
 
-export const game = () => {
+export const even = (userName) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
@@ -62,7 +62,7 @@ const calcStringExp = (string) => {
   }
 };
 
-export const calc = () => {
+export const calc = (userName) => {
   console.log('What is the result of the expression?');
 
   for (let i = 0; i < 3; i += 1) {

@@ -20,14 +20,19 @@ const calcStringExp = (string) => {
   const num1 = Number(stringColl[0]);
   const num2 = Number(stringColl[2]);
   const operator = stringColl[1];
+  let result;
   switch (operator) {
     case '+':
-      return num1 + num2;
+      result = num1 + num2;
+      break;
     case '-':
-      return num1 - num2;
+      result = num1 - num2;
+      break;
     default:
-      return num1 * num2;
+      result = num1 * num2;
+      break;
   }
+  return String(result);
 };
 
 const calc = (userName) => {
@@ -35,7 +40,7 @@ const calc = (userName) => {
 
   for (let i = 0; i < 3; i += 1) {
     const question = getExpression();
-    const correctAnswer = String(calcStringExp(question));
+    const correctAnswer = calcStringExp(question);
     const answer = readlineSync.question(`Questuion: ${question}\nYour answer: `);
 
     if (answer !== correctAnswer) {

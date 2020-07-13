@@ -1,10 +1,4 @@
-import readlineSync from 'readline-sync';
-
-const getRandomInt = () => {
-  const min = Math.ceil(1);
-  const max = Math.floor(100);
-  return Math.floor(Math.random() * (max - min)) + min;
-};
+import { getRandomInt, game } from '../index.js';
 
 const getExpression = () => {
   const num1 = getRandomInt();
@@ -35,20 +29,7 @@ const calcStringExp = (string) => {
   return String(result);
 };
 
-const calc = (userName) => {
-  console.log('What is the result of the expression?');
+const task = 'What is the result of the expression?';
 
-  for (let i = 0; i < 3; i += 1) {
-    const question = getExpression();
-    const correctAnswer = calcStringExp(question);
-    const answer = readlineSync.question(`Questuion: ${question}\nYour answer: `);
-
-    if (answer !== correctAnswer) {
-      return console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
-    }
-    console.log('Correct!');
-  }
-
-  return console.log(`Congratulations, ${userName}!`);
-};
+const calc = () => game(task, getExpression, calcStringExp);
 export default calc;

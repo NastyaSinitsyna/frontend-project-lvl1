@@ -1,10 +1,4 @@
-import readlineSync from 'readline-sync';
-
-const getRandomInt = () => {
-  const min = Math.ceil(1);
-  const max = Math.floor(100);
-  return Math.floor(Math.random() * (max - min)) + min;
-};
+import { getRandomInt, game } from '../index.js';
 
 const GCD = (m, n) => {
   if (n === 0) {
@@ -28,18 +22,7 @@ const getGCD = (string) => {
   return String(result);
 };
 
-const gcd = (userName) => {
-  console.log('Find the greatest common divisor of given numbers.');
+const task = 'Find the greatest common divisor of given numbers.';
 
-  for (let i = 0; i < 3; i += 1) {
-    const question = getTwoNumbers();
-    const correctAnswer = getGCD(question);
-    const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
-    if (correctAnswer !== answer) {
-      return console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
-    }
-    console.log('Correct!');
-  }
-  return console.log(`Congratulations, ${userName}!`);
-};
+const gcd = () => game(task, getTwoNumbers, getGCD);
 export default gcd;

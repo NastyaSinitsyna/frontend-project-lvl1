@@ -2,12 +2,14 @@ import { getRandomInt, game } from '../index.js';
 
 const isEven = (num) => {
   if (num % 2 === 0) {
-    return 'yes';
+    return true;
   }
-  return 'no';
+  return false;
 };
+
+const sayIfEven = (num) => (isEven(num) ? 'yes' : 'no');
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const even = () => game(task, getRandomInt, isEven);
+const even = () => game(task, getRandomInt, sayIfEven);
 export default even;

@@ -1,10 +1,10 @@
 import { getRandomInt, game } from '../index.js';
 
 const getExpression = () => {
-  const num1 = getRandomInt();
-  const num2 = getRandomInt();
+  const num1 = getRandomInt(1, 100);
+  const num2 = getRandomInt(1, 100);
   const operations = ['+', '-', '*'];
-  const operation = operations[Math.floor(Math.random() * operations.length)];
+  const operation = operations[getRandomInt(1, operations.length)];
   const expression = `${num1} ${operation} ${num2}`;
   return expression;
 };
@@ -22,14 +22,18 @@ const calcStringExp = (string) => {
     case '-':
       result = num1 - num2;
       break;
-    default:
+    case '*':
       result = num1 * num2;
       break;
+    default:
+      return undefined;
   }
-  return String(result);
+  return result;
 };
+
+const calcExpAsString = (string) => String(calcStringExp(string));
 
 const task = 'What is the result of the expression?';
 
-const calc = () => game(task, getExpression, calcStringExp);
+const calc = () => game(task, getExpression, calcExpAsString);
 export default calc;

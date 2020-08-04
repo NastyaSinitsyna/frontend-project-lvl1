@@ -1,10 +1,12 @@
 import { getRandomInt, game } from '../index.js';
 
 const getProgression = () => {
-  const firstItem = getRandomInt();
-  const diff = getRandomInt();
+  const firstItem = getRandomInt(1, 100);
+  const diff = getRandomInt(1, 100);
   const coll = [firstItem, firstItem + diff];
-  for (let n = 3; n <= 10; n += 1) {
+  const collFullLength = 10;
+  const firstAddedItem = coll.length + 1;
+  for (let n = firstAddedItem; n <= collFullLength; n += 1) {
     const stepNumber = n - 1;
     coll[stepNumber] = firstItem + (n - 1) * diff;
   }
@@ -18,20 +20,20 @@ const getSpecialItem = (progression) => {
   const coll = progression.split(' ');
   let diff;
   let answer;
-  for (let n = 0; n < coll.length; n += 1) {
-    if (coll[n] === '..') {
-      switch (n) {
+  for (let i = 0; i < coll.length; i += 1) {
+    if (coll[i] === '..') {
+      switch (i) {
         case (0):
-          diff = Number(coll[n + 2]) - Number(coll[n + 1]);
+          diff = Number(coll[i + 2]) - Number(coll[i + 1]);
           break;
         case (coll.length - 1):
-          diff = Number(coll[n - 2]) - Number(coll[n - 1]);
+          diff = Number(coll[i - 2]) - Number(coll[i - 1]);
           break;
         default:
-          diff = (Number(coll[n + 1]) - Number(coll[n - 1])) / 2;
+          diff = (Number(coll[i + 1]) - Number(coll[i - 1])) / 2;
           break;
       }
-      answer = n === coll.length - 1 ? Number(coll[n - 1]) + diff : Number(coll[n + 1]) - diff;
+      answer = i === 0 ? Number(coll[i + 1]) - diff : Number(coll[0]) + diff * i;
     }
   }
   return String(answer);

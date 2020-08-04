@@ -1,4 +1,5 @@
-import { getRandomInt, game } from '../index.js';
+import { getRandomInt } from '../general.js';
+import { game } from '../index.js';
 
 const GCD = (m, n) => {
   if (n === 0) {
@@ -8,8 +9,8 @@ const GCD = (m, n) => {
 };
 
 const getTwoNumbers = () => {
-  const number1 = getRandomInt();
-  const number2 = getRandomInt();
+  const number1 = getRandomInt(1, 100);
+  const number2 = getRandomInt(1, 100);
   const result = `${number1} ${number2}`;
   return result;
 };

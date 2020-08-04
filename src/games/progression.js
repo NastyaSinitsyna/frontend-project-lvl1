@@ -1,4 +1,5 @@
-import { getRandomInt, game } from '../index.js';
+import { getRandomInt } from '../general.js';
+import { game } from '../index.js';
 
 const getProgression = () => {
   const firstItem = getRandomInt(1, 100);

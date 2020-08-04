@@ -1,4 +1,5 @@
-import { getRandomInt, game } from '../index.js';
+import { getRandomInt } from '../general.js';
+import { game } from '../index.js';
 
 const isPrime = (n) => {
   if (n < 2) {
@@ -15,5 +16,5 @@ const isPrime = (n) => {
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const prime = () => game(task, getRandomInt, isPrime);
+const prime = () => game(task, getRandomInt(1, 100), isPrime);
 export default prime;

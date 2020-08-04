@@ -1,5 +1,5 @@
-import { getRandomInt } from '../general.js';
-import { game } from '../index.js';
+import getRandomInt from '../general.js';
+import game from '../index.js';
 
 const getExpression = () => {
   const num1 = getRandomInt(1, 100);

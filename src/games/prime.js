@@ -1,5 +1,5 @@
-import { getRandomInt } from '../general.js';
-import { game } from '../index.js';
+import getRandomInt from '../general.js';
+import game from '../index.js';
 
 const isPrime = (n) => {
   if (n < 2) {

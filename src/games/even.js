@@ -10,7 +10,9 @@ const isEven = (num) => {
 
 const sayIfEven = (num) => (isEven(num) ? 'yes' : 'no');
 
+const getRandomTillHundred = () => getRandomInt(1, 100);
+
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const even = () => game(task, getRandomInt(1, 100), sayIfEven);
+const even = () => game(task, getRandomTillHundred, sayIfEven);
 export default even;

@@ -1,6 +1,8 @@
 import getRandomInt from '../general.js';
 import game from '../index.js';
 
+const getRandomToHundred = () => getRandomInt(1, 100);
+
 const isPrime = (n) => {
   if (n < 2) {
     return false;
@@ -14,11 +16,14 @@ const isPrime = (n) => {
   return true;
 };
 
-const sayIfPrime = (num) => (isPrime(num) ? 'yes' : 'no');
-
-const getRandomTillHundred = () => getRandomInt(1, 100);
+const getNumAndSayIfPrime = () => {
+  const question = getRandomToHundred();
+  const answer = isPrime(question) ? 'yes' : 'no';
+  const result = [question, answer];
+  return result;
+};
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const prime = () => game(task, getRandomTillHundred, sayIfPrime);
+const prime = () => game(task, getNumAndSayIfPrime);
 export default prime;

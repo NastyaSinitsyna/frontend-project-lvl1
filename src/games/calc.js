@@ -32,9 +32,14 @@ const calcStringExp = (string) => {
   return result;
 };
 
-const calcExpAsString = (string) => String(calcStringExp(string));
+const getExpAndCalc = () => {
+  const question = getExpression();
+  const answer = String(calcStringExp(question));
+  const result = [question, answer];
+  return result;
+};
 
 const task = 'What is the result of the expression?';
 
-const calc = () => game(task, getExpression, calcExpAsString);
+const calc = () => game(task, getExpAndCalc);
 export default calc;

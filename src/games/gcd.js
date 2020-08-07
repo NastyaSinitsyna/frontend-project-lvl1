@@ -23,7 +23,14 @@ const getGCD = (string) => {
   return String(result);
 };
 
+const getTwoNumbersWithGCD = () => {
+  const question = getTwoNumbers();
+  const answer = getGCD(question);
+  const result = [question, answer];
+  return result;
+};
+
 const task = 'Find the greatest common divisor of given numbers.';
 
-const gcd = () => game(task, getTwoNumbers, getGCD);
+const gcd = () => game(task, getTwoNumbersWithGCD);
 export default gcd;

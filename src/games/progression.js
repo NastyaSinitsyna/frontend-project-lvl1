@@ -20,5 +20,5 @@ const getProgressionWithAnswer = () => {
 
 const task = 'What number is missing in the progression?';
 
-const progression = () => game(task, getProgressionWithAnswer);
-export default progression;
+const playProgressionGame = () => game(task, getProgressionWithAnswer);
+export default playProgressionGame;

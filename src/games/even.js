@@ -19,5 +19,5 @@ const getNumAndSayIfEven = () => {
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const even = () => game(task, getNumAndSayIfEven);
-export default even;
+const playEvenGame = () => game(task, getNumAndSayIfEven);
+export default playEvenGame;

@@ -8,24 +8,11 @@ const GCD = (m, n) => {
   return GCD(n, m % n);
 };
 
-const getTwoNumbers = () => {
-  const number1 = getRandomInt(1, 100);
-  const number2 = getRandomInt(1, 100);
-  const result = `${number1} ${number2}`;
-  return result;
-};
-
-const getGCD = (string) => {
-  const stringColl = string.split(' ');
-  const num1 = Number(stringColl[0]);
-  const num2 = Number(stringColl[1]);
-  const result = GCD(num1, num2);
-  return String(result);
-};
-
 const getTwoNumbersWithGCD = () => {
-  const question = getTwoNumbers();
-  const answer = getGCD(question);
+  const num1 = getRandomInt(1, 100);
+  const num2 = getRandomInt(1, 100);
+  const question = `${num1} ${num2}`;
+  const answer = String(GCD(num1, num2));
   const result = [question, answer];
   return result;
 };

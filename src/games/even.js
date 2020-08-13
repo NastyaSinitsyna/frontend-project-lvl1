@@ -3,12 +3,7 @@ import game from '../index.js';
 
 const getRandomToHundred = () => getRandomInt(1, 100);
 
-const isEven = (num) => {
-  if (num % 2 === 0) {
-    return true;
-  }
-  return false;
-};
+const isEven = (num) => (num % 2 === 0);
 
 const getNumAndSayIfEven = () => {
   const question = getRandomToHundred();

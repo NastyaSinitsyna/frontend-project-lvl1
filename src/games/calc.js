@@ -41,5 +41,5 @@ const getExpAndCalc = () => {
 
 const task = 'What is the result of the expression?';
 
-const calc = () => game(task, getExpAndCalc);
-export default calc;
+const playCalcGame = () => game(task, getExpAndCalc);
+export default playCalcGame;

@@ -32,5 +32,5 @@ const getTwoNumbersWithGCD = () => {
 
 const task = 'Find the greatest common divisor of given numbers.';
 
-const gcd = () => game(task, getTwoNumbersWithGCD);
-export default gcd;
+const playGcdGame = () => game(task, getTwoNumbersWithGCD);
+export default playGcdGame;

@@ -2,12 +2,12 @@ import getRandomInt from '../general.js';
 import game from '../index.js';
 
 const getProgressionWithAnswer = () => {
-  const firstItem = getRandomInt(1, 100);
+  const start = getRandomInt(1, 100);
   const diff = getRandomInt(1, 100);
-  const coll = [firstItem];
+  const coll = [];
   const collFullLength = 10;
-  for (let i = 1; i < collFullLength; i += 1) {
-    coll[i] = coll[0] + diff * i;
+  for (let i = 0; i < collFullLength; i += 1) {
+    coll[i] = start + diff * i;
   }
   const secretItemIndex = getRandomInt(1, collFullLength);
   const answer = String(coll[secretItemIndex]);

@@ -7,7 +7,7 @@ const getProgressionGameData = () => {
   const progression = [];
   const progFullLength = 10;
   for (let i = 0; i < progFullLength; i += 1) {
-    coll[i] = start + diff * i;
+    progression[i] = start + diff * i;
   }
   const secretItemIndex = getRandomInt(1, progFullLength);
   const answer = String(progression[secretItemIndex]);

@@ -14,7 +14,9 @@
 ## Run games
 
 Say if the number is even
-> make brain-even
+```
+make brain-even
+```
 
 Calculate the expression
 > make barin-calc

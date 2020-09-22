@@ -1,7 +1,7 @@
 # Welcome to the Brain Games!
-frontend-project-lvl1
+*frontend-project-lvl1*
 
-Play 5 math games and check your brain!
+**Play 5 math games and check your brain!**
 
 
 [![Brain-games CI](https://github.com/NastyaSinitsyna/frontend-project-lvl1/workflows/Brain-games%20CI/badge.svg)](https://github.com/NastyaSinitsyna/frontend-project-lvl1/actions)
@@ -13,20 +13,20 @@ Play 5 math games and check your brain!
 
 ## Run games
 
-> Say if the number is even
->> make brain-even
->
-> Calculate the expression
->> make barin-calc
->
-> Find the greatest common divisor of the numbers
->> make brain-gcd
->
-> Find the missing number of the progression
->> make brain-progression
->
-> Say if the number is prime
->> make brain-prime
+Say if the number is even
+> make brain-even
+
+Calculate the expression
+> make barin-calc
+
+Find the greatest common divisor of the numbers
+> make brain-gcd
+
+Find the missing number of the progression
+> make brain-progression
+
+Say if the number is prime
+> make brain-prime
 
 
 [![asciicast](https://asciinema.org/a/CE54AWQQAdHlv4X87DeVFsSl1.png)](https://asciinema.org/a/CE54AWQQAdHlv4X87DeVFsSl1)

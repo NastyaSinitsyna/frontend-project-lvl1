@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const game = (task, getQuestionWithAnswer) => {
+const playGame = (task, getQuestionWithAnswer) => {
   const userName = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
   console.log(`Hi, ${userName}!\n${task}`);
   const numberOfTries = 3;
@@ -18,4 +18,4 @@ const game = (task, getQuestionWithAnswer) => {
   const congratulation = `Congratulations, ${userName}!`;
   return console.log(congratulation);
 };
-export default game;
+export default playGame;

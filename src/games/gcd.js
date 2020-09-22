@@ -1,5 +1,5 @@
 import getRandomInt from '../intgenerator.js';
-import game from '../index.js';
+import playGame from '../index.js';
 
 const GCD = (m, n) => {
   if (n === 0) {
@@ -19,5 +19,5 @@ const getTwoNumbersWithGCD = () => {
 
 const task = 'Find the greatest common divisor of given numbers.';
 
-const playGcdGame = () => game(task, getTwoNumbersWithGCD);
+const playGcdGame = () => playGame(task, getTwoNumbersWithGCD);
 export default playGcdGame;

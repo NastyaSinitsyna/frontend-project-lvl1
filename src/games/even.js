@@ -1,5 +1,5 @@
 import getRandomInt from '../intgenerator.js';
-import game from '../index.js';
+import playGame from '../index.js';
 
 const isEven = (num) => (num % 2 === 0);
 
@@ -12,5 +12,5 @@ const getNumAndSayIfEven = () => {
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const playEvenGame = () => game(task, getNumAndSayIfEven);
+const playEvenGame = () => playGame(task, getNumAndSayIfEven);
 export default playEvenGame;

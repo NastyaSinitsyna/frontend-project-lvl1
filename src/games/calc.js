@@ -1,5 +1,5 @@
 import getRandomInt from '../intgenerator.js';
-import game from '../index.js';
+import playGame from '../index.js';
 
 const calcExp = (num1, num2, operator) => {
   switch (operator) {
@@ -29,5 +29,5 @@ const getExpAndCalc = () => {
 
 const task = 'What is the result of the expression?';
 
-const playCalcGame = () => game(task, getExpAndCalc);
+const playCalcGame = () => playGame(task, getExpAndCalc);
 export default playCalcGame;

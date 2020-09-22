@@ -1,5 +1,5 @@
 import getRandomInt from '../intgenerator.js';
-import game from '../index.js';
+import playGame from '../index.js';
 
 const getRandomToHundred = () => getRandomInt(1, 100);
 
@@ -25,5 +25,5 @@ const getNumAndSayIfPrime = () => {
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const playPrimeGame = () => game(task, getNumAndSayIfPrime);
+const playPrimeGame = () => playGame(task, getNumAndSayIfPrime);
 export default playPrimeGame;

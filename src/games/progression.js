@@ -1,7 +1,7 @@
 import getRandomInt from '../intgenerator.js';
 import playGame from '../index.js';
 
-const getProgressionWithAnswer = () => {
+const getProgressionGameData = () => {
   const start = getRandomInt(1, 100);
   const diff = getRandomInt(1, 100);
   const coll = [];
@@ -20,5 +20,5 @@ const getProgressionWithAnswer = () => {
 
 const task = 'What number is missing in the progression?';
 
-const playProgressionGame = () => playGame(task, getProgressionWithAnswer);
+const playProgressionGame = () => playGame(task, getProgressionGameData);
 export default playProgressionGame;

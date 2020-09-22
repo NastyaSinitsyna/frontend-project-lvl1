@@ -1,4 +1,4 @@
-import getRandomInt from '../general.js';
+import getRandomInt from '../intgenerator.js';
 import game from '../index.js';
 
 const getRandomToHundred = () => getRandomInt(1, 100);

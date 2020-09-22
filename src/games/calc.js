@@ -1,4 +1,4 @@
-import getRandomInt from '../general.js';
+import getRandomInt from '../intgenerator.js';
 import game from '../index.js';
 
 const calcExp = (num1, num2, operator) => {

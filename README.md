@@ -23,7 +23,7 @@ make brain-even
 
 Calculate the expression
 ```
-make barin-calc
+make brain-calc
 ```
 
 Find the greatest common divisor of the numbers

@@ -9,7 +9,9 @@
 
 ## Setup
 
-> npm install
+```
+npm install
+```
 
 
 ## Run games

@@ -11,6 +11,7 @@
 
 > npm install
 
+
 ## Run games
 
 Say if the number is even
@@ -37,6 +38,7 @@ Say if the number is prime
 ```
 make brain-prime
 ```
+
 
 [![asciicast](https://asciinema.org/a/CE54AWQQAdHlv4X87DeVFsSl1.png)](https://asciinema.org/a/CE54AWQQAdHlv4X87DeVFsSl1)
 

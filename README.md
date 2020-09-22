@@ -16,31 +16,33 @@ npm install
 
 ## Run games
 
-Say if the number is even
+**Say if the number is even**
 ```
 make brain-even
 ```
 
-Calculate the expression
+**Calculate the expression**
 ```
 make brain-calc
 ```
 
-Find the greatest common divisor of the numbers
+**Find the greatest common divisor of the numbers**
 ```
 make brain-gcd
 ```
 
-Find the missing number of the progression
+**Find the missing number of the progression**
 ```
 make brain-progression
 ```
 
-Say if the number is prime
+**Say if the number is prime**
 ```
 make brain-prime
 ```
 
+
+## Watch asciinemas
 
 [![asciicast](https://asciinema.org/a/CE54AWQQAdHlv4X87DeVFsSl1.png)](https://asciinema.org/a/CE54AWQQAdHlv4X87DeVFsSl1)
 

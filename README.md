@@ -19,17 +19,24 @@ make brain-even
 ```
 
 Calculate the expression
-> make barin-calc
+```
+make barin-calc
+```
 
 Find the greatest common divisor of the numbers
-> make brain-gcd
+```
+make brain-gcd
+```
 
 Find the missing number of the progression
-> make brain-progression
+```
+make brain-progression
+```
 
 Say if the number is prime
-> make brain-prime
-
+```
+make brain-prime
+```
 
 [![asciicast](https://asciinema.org/a/CE54AWQQAdHlv4X87DeVFsSl1.png)](https://asciinema.org/a/CE54AWQQAdHlv4X87DeVFsSl1)
 

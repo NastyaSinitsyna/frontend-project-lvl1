@@ -15,12 +15,16 @@ Play 5 math games and check your brain!
 
 > Say if the number is even
 >> make brain-even
+>
 > Calculate the expression
 >> make barin-calc
+>
 > Find the greatest common divisor of the numbers
 >> make brain-gcd
+>
 > Find the missing number of the progression
 >> make brain-progression
+>
 > Say if the number is prime
 >> make brain-prime
 

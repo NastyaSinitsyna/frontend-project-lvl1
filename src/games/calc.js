@@ -14,7 +14,7 @@ const calcExp = (num1, num2, operator) => {
   }
 };
 
-const getExpAndCalc = () => {
+const getCalcGameData = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
   const operators = ['+', '-', '*'];
@@ -29,5 +29,5 @@ const getExpAndCalc = () => {
 
 const task = 'What is the result of the expression?';
 
-const playCalcGame = () => playGame(task, getExpAndCalc);
+const playCalcGame = () => playGame(task, getCalcGameData);
 export default playCalcGame;

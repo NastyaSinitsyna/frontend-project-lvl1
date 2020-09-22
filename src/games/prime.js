@@ -16,7 +16,7 @@ const isPrime = (n) => {
   return true;
 };
 
-const getNumAndSayIfPrime = () => {
+const getPrimeGameData = () => {
   const question = getRandomToHundred();
   const answer = isPrime(question) ? 'yes' : 'no';
   const result = [question, answer];
@@ -25,5 +25,5 @@ const getNumAndSayIfPrime = () => {
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const playPrimeGame = () => playGame(task, getNumAndSayIfPrime);
+const playPrimeGame = () => playGame(task, getPrimeGameData);
 export default playPrimeGame;

@@ -8,7 +8,7 @@ const playGame = (task, getQuestionWithAnswer) => {
   const numberOfTries = 3;
   for (let i = 0; i < numberOfTries; i += 1) {
     const [question, correctAnswer] = getQuestionWithAnswer();
-    console.log(`Question:${question}`);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question(`Your answer: `);
     if (answer !== correctAnswer) {
       return console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);

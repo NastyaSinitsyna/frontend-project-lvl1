@@ -1,7 +1,7 @@
 import getRandomInt from '../intgenerator.js';
 import playGame from '../index.js';
 
-const calcExp = (num1, num2, operator) => {
+const calcExpression = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return num1 + num2;
@@ -21,7 +21,7 @@ const getCalcGameData = () => {
   const operator = operators[getRandomInt(1, operators.length)];
 
   const question = `${num1} ${operator} ${num2}`;
-  const answer = String(calcExp(num1, num2, operator));
+  const answer = String(calcExpression(num1, num2, operator));
 
   const result = [question, answer];
   return result;

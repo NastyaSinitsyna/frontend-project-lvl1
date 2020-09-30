@@ -1,8 +1,6 @@
 import getRandomInt from '../intgenerator.js';
 import playGame from '../index.js';
 
-const getRandomToHundred = () => getRandomInt(1, 100);
-
 const isPrime = (n) => {
   if (n < 2) {
     return false;
@@ -17,7 +15,7 @@ const isPrime = (n) => {
 };
 
 const getPrimeGameData = () => {
-  const question = getRandomToHundred();
+  const question = getRandomInt(1, 100);
   const answer = isPrime(question) ? 'yes' : 'no';
   const result = [question, answer];
   return result;

@@ -18,7 +18,7 @@ const getCalcGameData = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
   const operators = ['+', '-', '*'];
-  const operator = operators[getRandomInt(1, operators.length)];
+  const operator = operators[getRandomInt(0, operators.length - 1)];
 
   const question = `${num1} ${operator} ${num2}`;
   const answer = String(calcExpression(num1, num2, operator));
